@@ -19,7 +19,7 @@
 }(this, function (videojs) {
   "use strict";
   if (typeof window !== 'undefined') {
-    window['videojs_hotkeys'] = { version: "0.2.22" };
+    window['videojs_hotkeys'] = { version: "0.2.23" };
   }
 
   var hotkeys = function(options) {
@@ -224,8 +224,8 @@
                 } else {
                   player.requestFullscreen();
                 }
+                break;
               }
-              break;
 
             default:
               // Number keys from 0-9 skip to a percentage of the video. 0 is 0% and 9 is 90%
